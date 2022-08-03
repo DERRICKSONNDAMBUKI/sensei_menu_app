@@ -10,6 +10,7 @@ function App() {
   const [categories, setCategories] = useState(allCategories);
 
   const filterItems = (category) => {
+    setCategories(allCategories)
     if (category === "all") {
       setMenuItems(items);
       return;
